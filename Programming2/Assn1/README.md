@@ -32,6 +32,7 @@ Marks were based on functionality of each function, marks adding up to 100:
 | Trip (Itinerary) Menu | 5 |
 | Add/Remove Destinations from Trip | 15 |
 | Add Connecting Flights | 20 |
+| **TOTAL:** | 100 |
 
 I got 100% for this assignment :D
 
