@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" styleClass="background" prefHeight="200.0" prefWidth="800.0" spacing="20" 
+    xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Trip.BookTripController">
+    <ImageView>
+	<preserveRatio>true</preserveRatio>
+			<fitWidth>800</fitWidth>
+		<image><Image url="/image/trip.png"/></image>
+	</ImageView>
+	
+	<Separator/>
+	<Label text="${'Hi ' + controller.trip.agency.loggedInUser.name + ', welcome to the Trip section'}" styleClass="heading"/>
+	<Separator/>
+
+	<Region VBox.vgrow="ALWAYS"/>
+
+	<HBox alignment="center">
+		<Button text="Add Destination" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" onAction="#handleAddDestination"/>
+		<Button text="Remove Destination" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" onAction="#handleRemoveDestination"/>
+		<Button text="Add Connecting Flights" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" onAction="#handleAddConnectingFlights"/>
+        <Button text="View Trip" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" onAction="#handleViewTrip"/>
+		<Button text="Close" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" onAction="#handleClose"/>
+	</HBox>
+
+	<stylesheets>
+		<URL value="@/view/style.css"/>
+	</stylesheets>
+</VBox>

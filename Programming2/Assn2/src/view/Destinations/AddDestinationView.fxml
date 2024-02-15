@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>	
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" styleClass="background" prefHeight="420.0" prefWidth="600.0" spacing="20" 
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Destinations.ModifyDestinationsController">
+	<ImageView>
+	<preserveRatio>true</preserveRatio>
+			<fitWidth>600</fitWidth>
+		<image><Image url="/image/destination.png"/></image>
+	</ImageView>
+	
+	<Separator/>
+	<Label text="Add a Destination" styleClass="heading"/>
+	<Separator/>
+
+	<GridPane alignment="center" hgap="5" vgap="10">
+		<Label text="Name:" GridPane.columnIndex="0" GridPane.rowIndex="0" styleClass="label"/>
+		<TextField fx:id="nameTf" GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="textfield"/>
+		<Label text="Country:" GridPane.columnIndex="0" GridPane.rowIndex="1" styleClass="label"/>
+		<TextField fx:id="countryTf" GridPane.columnIndex="1" GridPane.rowIndex="1" styleClass="textfield"/>
+	</GridPane>
+
+	<Region VBox.vgrow="ALWAYS"/>
+
+	<HBox>
+		<Button text="Add Destination" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" disable="true" fx:id="addDestinationBtn" onAction="#handleAddDestination" styleClass="button"/>
+		<Button text="Remove Destination" managed="false" visible="false" disable="true" fx:id="removeDestinationBtn" styleClass="button"/>
+		<Button text="Close" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" onAction="#handleClose" styleClass="button"/>
+	</HBox>
+	
+	<stylesheets>
+		<URL value="@/view/style.css"/>
+	</stylesheets>
+</VBox>

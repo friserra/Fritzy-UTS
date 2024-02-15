@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox alignment="CENTER" styleClass="background" prefHeight="200.0" prefWidth="800.0" spacing="20" 
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AgencyController">
+	<ImageView>
+	<preserveRatio>true</preserveRatio>
+			<fitWidth>800</fitWidth>
+		<image><Image url="/image/agency.png"/></image>
+	</ImageView>
+	
+	<Separator/>
+	<Label text="${'Hi ' + controller.agency.loggedInUser.name + ', welcome to the Prog2 Travel Agency'}" styleClass="heading"/>
+	<Separator/>
+
+	<Region VBox.vgrow="ALWAYS"/>
+
+	<HBox alignment="center">
+		<Button text="Explore Flights" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" onAction="#handleExploreFlights" styleClass="button"/>
+		<Button text="Explore Destinations" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" onAction="#handleExploreDestinations" styleClass="button"/>
+		<Button text="Book a Trip" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" onAction="#handleBookTrip" styleClass="button"/>
+		<Button text="Exit" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" onAction="#handleExit" styleClass="button"/>
+	</HBox>
+
+	<stylesheets>
+		<URL value="@style.css"/>
+	</stylesheets>
+</VBox>

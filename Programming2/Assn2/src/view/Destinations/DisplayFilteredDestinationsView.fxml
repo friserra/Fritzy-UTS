@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.*?>	
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?>
+
+<VBox alignment="CENTER" styleClass="background" prefHeight="800.0" prefWidth="600.0" spacing="20" 
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Destinations.DisplayDestinationsController">
+	<ImageView>
+	<preserveRatio>true</preserveRatio>
+			<fitWidth>600</fitWidth>
+		<image><Image url="/image/destination.png"/></image>
+	</ImageView>
+	
+	<Separator/>
+	<Label text="Filtered Destinations" styleClass="heading"/>
+	<Separator/>
+
+	<Label text="Country" styleClass="label"/>
+	<TextField fx:id="filterTf"/>
+
+	<TableView items="${controller.destinations.destinations}" fx:id="filteredDestinationsTv" prefWidth="600.0">
+		<placeholder><Label text="No destinations found"/></placeholder>
+		<columns>
+			<TableColumn text="Name" prefWidth="300">
+				<cellValueFactory><PropertyValueFactory property="name"/></cellValueFactory>
+			</TableColumn>
+			<TableColumn text="Country" prefWidth="300">
+				<cellValueFactory><PropertyValueFactory property="country"/></cellValueFactory>
+			</TableColumn>
+		</columns>
+	</TableView>
+
+	<Button text="Close" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" onAction="#handleClose" styleClass="button"/>
+
+	<stylesheets>
+		<URL value="@/view/style.css"/>
+	</stylesheets>
+</VBox>

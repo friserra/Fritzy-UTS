@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.cell.*?>
+
+<VBox alignment="CENTER" styleClass="background" prefHeight="700.0" prefWidth="600.0" spacing="20" 
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Flights.DisplayFlightsController">
+	<ImageView>
+	<preserveRatio>true</preserveRatio>
+			<fitWidth>600</fitWidth>
+		<image><Image url="/image/flight.png"/></image>
+	</ImageView>
+	
+	<Separator/>
+	<Label text="Flights" styleClass="heading"/>
+	<Separator/>
+
+	<TextField fx:id="filterTf" managed="false" visible="false"/>
+
+	<TableView items="${controller.flights.flights}" prefWidth="600">
+		<placeholder><Label text="No flights found"/></placeholder>
+		<columns>
+			<TableColumn text="Airline" minWidth="120">
+				<cellValueFactory><PropertyValueFactory property="airline"/></cellValueFactory>
+			</TableColumn>
+			<TableColumn text="Flight Number" minWidth="120">
+				<cellValueFactory><PropertyValueFactory property="flightNo"/></cellValueFactory>
+			</TableColumn>
+			<TableColumn text="Takeoff Country" minWidth="120">
+				<cellValueFactory><PropertyValueFactory property="takeoff"/></cellValueFactory>
+			</TableColumn>
+			<TableColumn text="Landing Country" minWidth="120">
+				<cellValueFactory><PropertyValueFactory property="landing"/></cellValueFactory>
+			</TableColumn>
+			<TableColumn text="Cost" minWidth="120">
+				<cellValueFactory><PropertyValueFactory property="cost"/></cellValueFactory>
+			</TableColumn>
+		</columns>
+	</TableView>
+
+	<Button text="Close" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" onAction="#handleClose" styleClass="button"/>
+
+	<stylesheets>
+		<URL value="@/view/style.css"/>
+	</stylesheets>
+</VBox>

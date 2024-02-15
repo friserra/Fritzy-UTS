@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" styleClass="background" prefHeight="200.0" prefWidth="800.0" spacing="20" 
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Destinations.ExploreDestinationsController">
+	<ImageView>
+	<preserveRatio>true</preserveRatio>
+			<fitWidth>800</fitWidth>
+		<image><Image url="/image/destination.png"/></image>
+	</ImageView>
+	
+	<Separator/>
+	<Label text="${'Hi ' + controller.destinations.agency.loggedInUser.name + ', welcome to the Destinations section'}" styleClass="heading"/>
+	<Separator/>
+
+	<Region VBox.vgrow="ALWAYS"/>
+
+	<HBox alignment="center">
+		<Button text="View All Destinations" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" onAction="#handleViewAllDestinations" styleClass="button"/>
+		<Button text="View Destinations by Country" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" onAction="#handleViewFilteredDestinations" styleClass="button"/>
+		<Button text="Add Destination" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" onAction="#handleAddDestination" styleClass="button"/>
+		<Button text="Remove Destination" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" onAction="#handleRemoveDestination" styleClass="button"/>
+		<Button text="Close" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" onAction="#handleClose" styleClass="button"/>
+	</HBox>
+
+	<stylesheets>
+		<URL value="@/view/style.css"/>
+	</stylesheets>
+</VBox>

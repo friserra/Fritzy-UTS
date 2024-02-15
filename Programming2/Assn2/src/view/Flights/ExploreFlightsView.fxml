@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" styleClass="background" prefHeight="200.0" prefWidth="800.0" spacing="20"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Flights.ExploreFlightsController">
+	<ImageView>
+	<preserveRatio>true</preserveRatio>
+			<fitWidth>800</fitWidth>
+		<image><Image url="/image/flight.png"/></image>
+	</ImageView>
+	
+	<Separator/>
+	<Label text="${'Hi ' + controller.flights.agency.loggedInUser.name + ', welcome to the Flights section'}" styleClass="heading"/>
+	<Separator/>
+
+	<Region VBox.vgrow="ALWAYS"/>
+
+	<HBox alignment="center">
+		<Button text="View All Flights" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" onAction="#handleViewAllFlights" styleClass="button"/>
+		<Button text="View Flights by Country" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" onAction="#handleViewFilteredFlights" styleClass="button"/>
+		<Button text="Add Flight" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" onAction="#handleAddFlight" styleClass="button"/>
+		<Button text="Remove Flight" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" onAction="#handleRemoveFlight" styleClass="button"/>
+		<Button text="Close" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" onAction="#handleClose" styleClass="button"/>
+	</HBox>
+
+	<stylesheets>
+		<URL value="@/view/style.css"/>
+	</stylesheets>
+</VBox>
