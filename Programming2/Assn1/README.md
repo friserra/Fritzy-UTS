@@ -5,6 +5,14 @@ Students were asked to code a travel agency's management system using the what w
 
 It had to include sections for managing destinations and flights of the agency, as well as planning a client's travel itinerary.
 
+## What challenges did I face?
+
+### I am a bit rusty...
+This was the first real coding I had done in a while (I transferred institutions and had to catch up on core subjects at UTS) so I had to re-establish my basics first of all. Most of the weekly assignments did help with that though, so it wasn't too rough.
+
+### Yikes, a new programming language!
+Java was also a new programming language. I was very overwhelmed with these new concepts like constructors, classes and the whatnot. I only knew how to do JavaScript and very basic C. Again, the weekly assignments also helped with this.
+
 ## What is the success criteria of this assignment?
 Marks were based on functionality of each function, marks adding up to 100:
 | Function | Marks |
@@ -27,4 +35,13 @@ Marks were based on functionality of each function, marks adding up to 100:
 
 I got 100% for this assignment :D
 
-## Challenges I Faced
+## How to run this program
+You will need to download Java from [Oracle](https://www.oracle.com/java/technologies/downloads/). Make sure you download the right version for your OS!
+
+1. Download this folder (Fritzy-UTS/Programming2/Assn1)
+2. Open Terminal (applicable to both Windows and MacOS)
+3. Use the command line to navigate to the downloaded folder
+4. Compile the code: javac Agency.java
+5. Execute the code: java Agency
+
+**NOTE**: It will ask for a username and password because we were tasked with making a login screen too. Please use "guest@github.com" for the username and "456" for the password.
