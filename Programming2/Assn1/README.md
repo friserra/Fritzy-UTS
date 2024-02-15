@@ -1,11 +1,11 @@
-#Programming 2 (48024) - Spring Semester 2023 - Assignment 1
+# Programming 2 (48024) - Spring Semester 2023 - Assignment 1
 
-##What is this assignment about?
+## What is this assignment about?
 Students were asked to code a travel agency's management system using the what we've learnt (Object-Oriented Design, Standard Patterns, & Lists). The whole system runs in the command-line.
 
 It had to include sections for managing destinations and flights of the agency, as well as planning a client's travel itinerary.
 
-##What is the success criteria of this assignment?
+## What is the success criteria of this assignment?
 Marks were based on functionality of each function, marks adding up to 100:
 | Function | Marks |
 | -------- | ----- |
@@ -27,4 +27,4 @@ Marks were based on functionality of each function, marks adding up to 100:
 
 I got 100% for this assignment :D
 
-##Challenges I Faced
+## Challenges I Faced
